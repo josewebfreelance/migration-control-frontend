@@ -1,0 +1,20 @@
+@import '../variables';
+h6 {
+  font-size: .8rem;
+  background-color: #ECEFF1;
+  padding: 6px 16px;
+  border-radius: 4px;
+}
+
+.logo {
+  background: url('../../src/assets/sat-logo.png') transparent no-repeat center;
+  height: 50px;
+  margin-top: 10px;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
+.body-container {
+  height: 100vh;
+  overflow-y: auto;
+}

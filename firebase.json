@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/migration-control",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

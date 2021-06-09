@@ -1,0 +1,115 @@
+@import '../../variables';
+
+.capture-form-component {
+  .field-empty {
+    height: 23px;
+  }
+
+  .mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+
+  .header-title {
+    background-color: #37474F;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .mat-step-icon {
+    background-color: $primary-color !important;
+  }
+
+  .buttons-content {
+    button, a {
+      border-radius: 100px !important;
+      font-weight: bold !important;
+    }
+
+    .btn-next {
+      background-color: $primary-color !important;
+    }
+
+    .btn-back {
+      background-color: $secondary-color !important;
+    }
+
+    .btn-print {
+      background-color: $third-color !important;
+    }
+  }
+
+  .table {
+    // border: 1px solid;
+    > div {
+      border: 1px solid;
+
+      .mat-form-field {
+        border-right: 1px solid;
+      }
+    }
+  }
+
+  .table-v {
+    > div {
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+
+      &.header {
+
+        &:nth-child(1) {
+          border-left: 1px solid;
+        }
+        border-right: 1px solid;
+
+      }
+    }
+  }
+
+  .table-s2 {
+    // border: 1px solid map-get($font-colors, primary);
+
+    .header {
+      border-top: 2px solid map-get($font-colors, primary);
+      border-left: 2px solid map-get($font-colors, primary);
+      border-right: 2px solid map-get($font-colors, primary);
+      border-bottom: 1px solid map-get($font-colors, primary);
+      border-radius: 16px 16px 0 0;
+
+      th {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+        background-color: #ECEFF1;
+
+        &:first-child {
+          border-radius: 14px 0 0 0;
+        }
+
+        &:last-child {
+          border-radius: 0 14px 0 0;
+        }
+      }
+
+      th {
+        &:not(:last-child) {
+          border-right: 1px solid map-get($font-colors, primary);
+        }
+      }
+    }
+
+    .row {
+      &:not(:first-child) {
+        margin-left: 0;
+        border-left: 2px solid map-get($font-colors, primary);
+        margin-right: 0;
+        border-right: 2px solid map-get($font-colors, primary);
+      }
+      &:last-child {
+        border-bottom: 2px solid map-get($font-colors, primary);
+        border-radius: 0 0 16px 16px;
+      }
+    }
+  }
+}
